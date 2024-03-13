@@ -19,10 +19,7 @@
         <hr>
         <ul v-for="({quote, author}, index) in quotes">
             <li><span>{{index + i}} {{quote}}</span></li>
-            <!-- <blockquote v-if="author != null/undefind/''"></blockquote>-->
-            <blockquote v-if="author">{{author}}</blockquote>
-            <!--<blockquote v-show="author">{{author}}</blockquote>-->
-
+            AUTHOR: {{author }}
         </ul>
         <!--{{newQuote}}-->
     </div>

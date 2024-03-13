@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuejs </title>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <div id="myApp">
+        <h1>Batman Quotes</h1>
+        <!--DESESTRUCTURACION CON INDICE-->
+        <ul v-for="({quote, author}, index) in quotes">
+            <li><span>{{index}} {{quote}}</span></li>
+            AUTHOR: {{author }}
+        </ul>
+        <!--SIN INDICE-->
+        <!--<ul>
+            <li v-for="{quote, author} in quotes" >
+                <span>{{ quote }}</span>
+                <blockquote>-{{author}}</blockquote>
+            </li>
+        </ul>-->
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
